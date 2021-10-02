@@ -37,29 +37,29 @@ async def _human_time_duration(seconds):
 async def start(_, m: Message):
     if m.chat.type == "private":
         await m.reply_text(
-            f"✨ **Merhaba, Ben Telegram Onaylı Grup TV botuyum.**\n\n💭 **Sesli sohbetlerinizde video izlemenizi sağlayabiliriz "
-            f"video chats easily.**\n\n❔ **Nasıl kullanacağınızı görmek için yarım isteyin** 👇🏻",
+            f"✨ **Merhaba, Ben FLACKWAR VİDEO BOT**\n\n💭 **Sesli sohbetlerinizde video izlemenizi sağlayabilirim "
+            f"kolay yol.**\n\n❔ **Nasıl kullanacağınızı görmek için yarım isteyin** 👇🏻",
             reply_markup=InlineKeyboardMarkup(
                 [[
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕", url=f"https://t.me/{Veez.BOT_USERNAME}?startgroup=true")
+                        "➕ beni gruba ekle  ➕", url=f"https://t.me/{Veez.BOT_USERNAME}?startgroup=true")
                 ], [
                     InlineKeyboardButton(
-                        "❔ HOW TO USE THIS BOT", callback_data="cbguide")
+                        "❔ BU BOT NASIL KULLANILIR", callback_data="cbguide")
                 ], [
                     InlineKeyboardButton(
                         "🌐 Telegram Geliştiricileri", callback_data="cbinfo")
                 ], [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/sancakailesi"),
+                        "💬 Group", url="https://t.me/flackwardev"),
                     InlineKeyboardButton(
-                        "📣 Channel", url="https://t.me/kizilsancakbilgi")
+                        "📣 Channel", url="https://t.me/flackwardev")
                 ], [
                     InlineKeyboardButton(
-                        "👩🏻‍💻 Developer", url="https://t.me/kizilsancaksahibi")
+                        "👩🏻‍💻 Developer", url="https://t.me/burakizm")
                 ], [
                     InlineKeyboardButton(
-                        "📚 All Command List", callback_data="cblist")
+                        "📚 komut listesi", callback_data="cblist")
                 ]]
             ))
     else:
@@ -67,13 +67,13 @@ async def start(_, m: Message):
                            reply_markup=InlineKeyboardMarkup(
                                [[
                                    InlineKeyboardButton(
-                                       "❔ HOW TO USE THIS BOT", callback_data="cbguide")
+                                       "❔ bu botu nasıl kullanabilirim", callback_data="cbguide")
                                ], [
                                    InlineKeyboardButton(
-                                       "🌐 Search Youtube", switch_inline_query='')
+                                       "🌐 youtube de arat", switch_inline_query='')
                                ], [
                                    InlineKeyboardButton(
-                                       "📚 Command List", callback_data="cblist")
+                                       "📚 komut listesi", callback_data="cblist")
                                ]]
                            )
                            )
@@ -90,10 +90,10 @@ async def alive(_, m: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨ Group", url=f"https://t.me/Sancakailesi"
+                        "✨ Group", url=f"https://t.me/flackwardev"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel", url=f"https://t.me/kizilsancakbilgi"
+                        "📣 Channel", url=f"https://t.me/flackwardev"
                     )
                 ]
             ]
