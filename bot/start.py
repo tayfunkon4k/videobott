@@ -63,7 +63,7 @@ async def start(_, m: Message):
                 ]]
             ))
     else:
-        await m.reply_text("**✨ bot is online now ✨**",
+        await m.reply_text("**✨ bot şu an aktif  ✨**",
                            reply_markup=InlineKeyboardMarkup(
                                [[
                                    InlineKeyboardButton(
@@ -85,7 +85,7 @@ async def alive(_, m: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m.reply_text(
-        f"""✅ **bot is running**\n<b>💠 **uptime:**</b> `{uptime}`""",
+        f"""✅ **bot çalışıyor **\n<b>💠 **uptime:**</b> `{uptime}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
