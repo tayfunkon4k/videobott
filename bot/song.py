@@ -41,7 +41,7 @@ def song(_, message):
         duration = results[0]["duration"]
 
     except Exception as e:
-        m.edit("❌ song not found.\n\nplease give a valid song name.")
+        m.edit("❌ şarkı bulunamadı.\n\nlütfen geçerlibir şarkı ismi giriniz.")
         print(str(e))
         return
     m.edit("📥 İndiriliyor...")
@@ -258,7 +258,7 @@ async def vsong(client, message):
     except Exception as e:
         return await msg.edit(f"🚫 **Hata:** {str(e)}")
     preview = wget.download(thumbnail)
-    await msg.edit("📤 **Az kaldı geliyor...**")
+    await msg.edit("📤 **Birazdan geliyor...**")
     await message.reply_video(
         file_name,
         duration=int(ytdl_data["duration"]),
