@@ -179,7 +179,7 @@ async def startvideo(client, m: Message):
                 stream_type=StreamType().local_stream,
             )
             await m.reply_photo(
-                photo="https://telegra.ph/file/db67cd63d1c81b8a7f85c.jpg",
+                photo="https://telegra.ph/file/ac6c6dfadc815ec533571.jpg",
                 reply_markup=keyboard,
                 caption=f"💡 **video akışı başlatılıyor !**\n\n» **videoyu izlemek için görüntülü sohbete katılın.**")
             return await msg.delete()
