@@ -20,7 +20,7 @@ async def cbguide(_, query: CallbackQuery):
 
 📝 **not: bu botu sadece grup adminleri kullanabilir!**
 
-⚡ __[FLACKWAR DEV](https://t.me/flackwardev) tarafından geliştirildi__""",
+⚡ __[SEFİLLERMUSİCSUPPORT](https://t.me/SEFİLLERMUSİCSUPPORT) tarafından geliştirildi__""",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton(
@@ -32,8 +32,8 @@ async def cbguide(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"✨ **Hello there, I am a telegram group video streaming bot.**\n\n💭 **I was created to stream videos in group "
-        f"video chats easily.**\n\n❔ **To find out how to use me, please press the help button below** 👇🏻",
+        f"✨ **MERHABA, BEN TELEGRAM GRUPLARINDA MÜZİK VE VİDEO OYNATMAK İÇİN GELİŞTİRİLDİM.**\n\n💭 **I was created to stream videos in group "
+        f"Video izlemek ve müzik dinlemek için.**\n\n❔ **AŞAĞIDAKİ BUTONA TIKLAYINIZ** 👇🏻",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton(
@@ -67,8 +67,8 @@ async def cbinfo(_, query: CallbackQuery):
 🤖 __Bu bot, WebRTC'den çeşitli yöntemler kullanılarak telegram grubu görüntülü sohbetlerinde video akışı yapmak için oluşturuldu.__
 
 
-👩🏻‍✈️ » [BURAK](https://t.me/burakizm)
-🤵🏻 » [BAY KAOSS](https://t.me/Baykaoss)
+👩🏻‍✈️ » [TAYFUN](https://t.me/SEFİLLERSAHİBİ)
+🤵🏻 » [SEFİLLER MÜZİK SUPPORT](https://t.me/SEFİLLERMUSİCSUPPORTT)
 
 __This bot licensed under GNU-GPL 3.0 License__""",
         reply_markup=InlineKeyboardMarkup(
