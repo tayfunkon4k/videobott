@@ -90,10 +90,10 @@ async def alive(_, m: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨ Group", url=f"https://t.me/flackwardev"
+                        "✨ Group", url=f"https://t.me/Sefillermusicsupportt"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel", url=f"https://t.me/flackwardev"
+                        "📣 Channel", url=f"https://t.me/sefillermusicsupport"
                     )
                 ]
             ]
