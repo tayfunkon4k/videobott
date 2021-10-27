@@ -37,7 +37,7 @@ async def _human_time_duration(seconds):
 async def start(_, m: Message):
     if m.chat.type == "private":
         await m.reply_text(
-            f"✨ **Merhaba, Ben FLACKWAR VİDEO BOT**\n\n💭 **Sesli sohbetlerinizde video izlemenizi sağlayabilirim "
+            f"✨ **Merhaba, Ben SEFİLLER VİDEO BOT**\n\n💭 **Sesli sohbetlerinizde video izlemenizi sağlayabilirim "
             f"kolay yol.**\n\n❔ **Nasıl kullanacağınızı görmek için yarım isteyin** 👇🏻",
             reply_markup=InlineKeyboardMarkup(
                 [[
@@ -51,12 +51,12 @@ async def start(_, m: Message):
                         "🌐 Telegram Geliştiricileri", callback_data="cbinfo")
                 ], [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/flackwardev"),
+                        "💬 Group", url="https://t.me/Sefillermusicsupportt"),
                     InlineKeyboardButton(
-                        "📣 Channel", url="https://t.me/flackwardev")
+                        "📣 Channel", url="https://t.me/Sefillermusicsupport")
                 ], [
                     InlineKeyboardButton(
-                        "👩🏻‍💻 Developer", url="https://t.me/burakizm")
+                        "👩🏻‍💻 Developer", url="https://t.me/sefillersahibi")
                 ], [
                     InlineKeyboardButton(
                         "📚 komut listesi", callback_data="cblist")
@@ -93,7 +93,7 @@ async def alive(_, m: Message):
                         "✨ Group", url=f"https://t.me/Sefillermusicsupportt"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel", url=f"https://t.me/sefillermusicsupport"
+                        "📣 Channel", url=f"https://t.me/sefillermusicsupportt"
                     )
                 ]
             ]
