@@ -31,7 +31,7 @@ async def entergroup(client, message):
 
     try:
         await USER.join_chat(invitelink)
-        await USER.send_message(message.chat.id, "🤖: Geldim geldim hop burdayım ")
+        await USER.send_message(message.chat.id, "🤖: Sen Çağırırsın da Gelmem mi 𝕋𝕒𝕪𝕗𝕦𝕟𝕟 Reis Emrindeyim 😎 ")
     except UserAlreadyParticipant:
         await message.reply_text(
             "<b>✅ assistant already entered this group</b>",
