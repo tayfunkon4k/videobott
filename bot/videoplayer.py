@@ -14,7 +14,7 @@ from config import Veez
 from helpers.decorators import authorized_users_only
 from helpers.filters import command
 from helpers.loggings import LOG
-from yt_dlp import YoutubeDL
+from youtube_dl import YoutubeDL
 from youtube_dl.utils import ExtractorError
 from pytgcalls.types.input_stream import (
     VideoParameters,
