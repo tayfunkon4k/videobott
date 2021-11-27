@@ -37,7 +37,7 @@ async def _human_time_duration(seconds):
 async def start(_, m: Message):
     if m.chat.type == "private":
         await m.reply_text(
-            f"✨ **Merhaba, Ben SEFİLLER VİDEO BOT**\n\n💭 **Sesli sohbetlerinizde video izlemenizi sağlayabilirim "
+            f"✨ **Merhaba, Ben 𝐁𝐀𝐓𝐓𝐋𝐄 ✘ VİDEO BOT**\n\n💭 **Sesli sohbetlerinizde video izlemenizi sağlayabilirim "
             f"kolay yol.**\n\n❔ **Nasıl kullanacağınızı görmek için yarım isteyin** 👇🏻",
             reply_markup=InlineKeyboardMarkup(
                 [[
@@ -51,12 +51,12 @@ async def start(_, m: Message):
                         "🌐 Telegram Geliştiricileri", callback_data="cbinfo")
                 ], [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/SefillerSohbett"),
+                        "💬 Group", url="https://t.me/Sohbettepki"),
                     InlineKeyboardButton(
-                        "📣 Channel", url="https://t.me/Sefillermusicsupportt")
+                        "📣 Channel", url="https://t.me/Sohbettepki")
                 ], [
                     InlineKeyboardButton(
-                        "👩🏻‍💻 Developer", url="https://t.me/SefillerSahibi")
+                        "👩🏻‍💻 Developer", url="https://t.me/Cumhurbaskanııı")
                 ], [
                     InlineKeyboardButton(
                         "📚 komut listesi", callback_data="cblist")
@@ -90,10 +90,10 @@ async def alive(_, m: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨ Group", url=f"https://t.me/SefillerSohbett"
+                        "✨ Group", url=f"https://t.me/Sohbettepki"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel", url=f"https://t.me/SefillermusicSupportt"
+                        "📣 Channel", url=f"https://t.me/Sohbettepki"
                     )
                 ]
             ]
