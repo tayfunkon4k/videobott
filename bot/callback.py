@@ -20,7 +20,7 @@ async def cbguide(_, query: CallbackQuery):
 
 📝 **not: bu botu sadece grup adminleri kullanabilir!**
 
-⚡ __[SEFİLLERMUSİCSUPPORT](https://t.me/SEFİLLERMUSİCSUPPORT) tarafından geliştirildi__""",
+⚡ __[TELEGRAM BOT YAPIMI](https://t.me/CUMHURBASKANIII) tarafından geliştirildi__""",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton(
@@ -32,7 +32,7 @@ async def cbguide(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"✨ **MERHABA, BEN TELEGRAM GRUPLARINDA MÜZİK VE VİDEO OYNATMAK İÇİN GELİŞTİRİLDİM.**\n\n💭 **I was created to stream videos in group "
+        f"✨ **MERHABA, BEN TELEGRAM GRUPLARINDA VİDEO OYNATMAK İÇİN GELİŞTİRİLDİM.**\n\n💭 ** Grupta video akışı yapmak için yaratıldım "
         f"Video izlemek ve müzik dinlemek için.**\n\n❔ **AŞAĞIDAKİ BUTONA TIKLAYINIZ** 👇🏻",
         reply_markup=InlineKeyboardMarkup(
             [[
@@ -67,8 +67,8 @@ async def cbinfo(_, query: CallbackQuery):
 🤖 __Bu bot, WebRTC'den çeşitli yöntemler kullanılarak telegram grubu görüntülü sohbetlerinde video akışı yapmak için oluşturuldu.__
 
 
-👩🏻‍✈️ » [TAYFUN](https://t.me/SEFİLLERSAHİBİ)
-🤵🏻 » [SEFİLLER MÜZİK SUPPORT](https://t.me/SEFİLLERMUSİCSUPPORTT)
+👩🏻‍✈️ » [DEVELOPER](https://t.me/Cumhurbaskanııı)
+🤵🏻 » [BOT SAHİBİ](https://t.me/By_Jilet)
 
 __This bot licensed under GNU-GPL 3.0 License__""",
         reply_markup=InlineKeyboardMarkup(
