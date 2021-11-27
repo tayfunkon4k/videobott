@@ -241,7 +241,7 @@ async def chstream(client, m: Message):
                 return
             process = raw_converter(livelink, f'audio{chat_id}.raw', f'video{chat_id}.raw')
             FFMPEG_PROCESS[chat_id] = process
-            msg = await m.reply("🔁 **starting video streaming...**")
+            msg = await m.reply("🔁 **Video Akışı Başlatılıyor...**")
             await asyncio.sleep(10)
             try:
                 audio_file = f'audio{chat_id}.raw'
@@ -267,16 +267,16 @@ async def chstream(client, m: Message):
                     ),
                     stream_type=StreamType().local_stream,
                 )
-                await msg.edit("💡 **video streaming channel started !**")
+                await msg.edit("💡 **Yayın Akışı Başlatıldı Keyifli İzlemeler !**")
                 await idle()
             except Exception as e:
                 await msg.edit(f"🚫 **error** - `{e}`")
    
     elif replied.video or replied.document:
-        msg = await m.reply("📥 **downloading video...**")
+        msg = await m.reply("📥 **İndirildi...**")
         video = await client.download_media(m.reply_to_message)
         chat_id = Veez.CHANNEL
-        await msg.edit("🔁 **preparing video...**")
+        await msg.edit("🔁 **Hazırlanıyor...**")
         os.system(f"ffmpeg -i '{video}' -f s16le -ac 1 -ar 48000 'audio{chat_id}.raw' -y -f rawvideo -r 20 -pix_fmt yuv420p -vf scale=640:360 'video{chat_id}.raw' -y")
         try:
             audio_file = f'audio{chat_id}.raw'
