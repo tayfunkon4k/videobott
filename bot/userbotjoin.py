@@ -31,10 +31,10 @@ async def entergroup(client, message):
 
     try:
         await USER.join_chat(invitelink)
-        await USER.send_message(message.chat.id, "🤖: Sen Çağırırsın da Gelmem mi 𝕋𝕒𝕪𝕗𝕦𝕟𝕟 Reis Emrindeyim 😎 ")
+        await USER.send_message(message.chat.id, "🤖: Sen Çağırırsın da Gelmem mi Reis Emrindeyim 😎 ")
     except UserAlreadyParticipant:
         await message.reply_text(
-            "<b>✅ assistant already entered this group</b>",
+            "<b>✅ asistan zaten bu gruba girdi </b>",
         )
     except Exception as e:
         print(e)
@@ -43,7 +43,7 @@ async def entergroup(client, message):
         )
         return
     await message.reply_text(
-        "<b>✅ assistant userbot joined your chat</b>",
+        "<b>✅ asistan userbot sohbetinize katıldı </b>",
     )
 
 
@@ -67,12 +67,12 @@ async def outall(client, message):
 
     left=0
     failed=0
-    lol = await message.reply("🔁 assistant leaving all chats")
+    lol = await message.reply("🔁 Tamam Gidiyorum 🥺")
     async for dialog in USER.iter_dialogs():
         try:
             await USER.leave_chat(dialog.chat.id)
             left += 1
-            await lol.edit(f"🔁 assistant leaving...\n⏳ Left: {left} chats.\n\n❌ Failed: {failed} chats.")
+            await lol.edit(f"🔁 Bu Gruptan Ayrılıyorum...\n⏳ Left: {left} chats.\n\n❌ Failed: {failed} chats.")
         except:
             failed += 1
             await lol.edit(f"🔁 assistant leaving...\n⏳ Left: {left} chats.\n\n❌ Failed: {failed} chats.")
