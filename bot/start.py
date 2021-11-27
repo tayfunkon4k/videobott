@@ -48,7 +48,7 @@ async def start(_, m: Message):
                         "❔ BU BOT NASIL KULLANILIR", callback_data="cbguide")
                 ], [
                     InlineKeyboardButton(
-                        "🌐 Telegram Geliştiricileri", url=f"https://t.me/{Veez.OWNER_NAME}")")
+                        "🌐 Telegram Geliştiricileri", callback_data="cbinfo")
                 ], [
                     InlineKeyboardButton(
                         "💬 Group", url="https://t.me/Sohbettepki"),
